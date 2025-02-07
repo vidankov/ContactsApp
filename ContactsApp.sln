@@ -4,12 +4,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsApp", "ContactsApp.csproj", "{DF5E124E-3029-45CD-8F54-5717EF99CA04}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C8F79E02-08B9-479E-82DD-F1E3E157B5F0} = {C8F79E02-08B9-479E-82DD-F1E3E157B5F0}
+		{F5F30030-7931-4A64-8081-E84F42DF0E45} = {F5F30030-7931-4A64-8081-E84F42DF0E45}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "..\Core\Core.csproj", "{03D0BE4A-8768-4EA3-9047-7C562B74258A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{8728DBF3-5C69-4DDC-9CF2-7A9B01DC6C8F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03D0BE4A-8768-4EA3-9047-7C562B74258A} = {03D0BE4A-8768-4EA3-9047-7C562B74258A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "..\ViewModels\ViewModels.csproj", "{F5F30030-7931-4A64-8081-E84F42DF0E45}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03D0BE4A-8768-4EA3-9047-7C562B74258A} = {03D0BE4A-8768-4EA3-9047-7C562B74258A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Views", "..\Views\Views.csproj", "{C8F79E02-08B9-479E-82DD-F1E3E157B5F0}"
 EndProject
